@@ -1,0 +1,17 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [
+  [cljsjs/react "17.0.2-0"]
+  [cljsjs/react-dom "17.0.2-0"]
+  [reagent "1.1.0"]]
+
+ :dev-http {8080 "public"}
+ :builds
+ {:frontend
+  {:target :browser
+   :modules {:main {:init-fn kanban.frontend.app/init}}}}}
