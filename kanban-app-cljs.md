@@ -4,6 +4,20 @@
 
 [Shibuya.lisp lispteatime #02](https://lisp.connpass.com/event/221217/)のライブコーディングパートで実装した、trell○っぽいカンバンアプリです。実装にはClojureScriptとその上のReactライブラリであるReagentを用いました。
 
+## 実行方法
+
+このディレクトリに入って以下を実行すると`localhost:8080`で開発環境サーバが立ち上がるので、ブラウザでアクセスする。
+
+```
+npm i
+npx shadow-cljs watch frontend
+```
+
+## 使用方法
+
+- テキストボックスにタスク名(文字列)を入力しエンターキーを叩くとタスクが追加される
+- '🥝'をクリックするとタスクが消える
+
 -----
 
 ## 目標
